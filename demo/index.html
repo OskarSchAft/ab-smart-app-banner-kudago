@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <h1 id="header">1 + 1 = </h1>
+
+    <script type="text/javascript" src="lib/mini-require-ab.js"></script>
+    <script type="text/javascript" src="../dist/ab-jsmodule-template.amd.js"></script>
+
+    <script type="text/javascript">
+        var module = require('ab-jsmodule-template'),
+            header = document.getElementById("header");
+
+        header.innerHTML += module.add(1, 1);
+    </script>
+</body>
+</html>

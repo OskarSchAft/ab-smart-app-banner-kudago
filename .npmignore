@@ -1,0 +1,11 @@
+# Files to ignore
+*.iml
+.babelrc
+.gitignore
+.editorconfig
+karma.conf.js
+webpack.config.js
+
+# Directories to ignore
+js
+.idea
