@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="main.css" />
-</head>
 <body>
-    <h1 id="header">1 + 1 = </h1>
+    <button type="button" onClick="onSpeak()">Speak</button>
+    <div id="header"></div>
 
     <script type="text/javascript" src="lib/mini-require-ab.js"></script>
     <script type="text/javascript" src="../dist/ab-jsmodule-template.amd.js"></script>
@@ -13,7 +11,10 @@
         var module = require('ab-jsmodule-template'),
             header = document.getElementById("header");
 
-        header.innerHTML += module.add(1, 1);
+        function onSpeak() {
+            module.speak();
+            header.innerHTML = "I have spoken in the console."
+        }
     </script>
 </body>
 </html>

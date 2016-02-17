@@ -1,5 +1,5 @@
-module.exports = {
-    add: function(a, b) {
-        return a + b;
-    }
-};
+const win = window;
+
+export function speak() {
+    win.console.log('Hello world!');
+}
