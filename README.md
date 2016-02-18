@@ -26,7 +26,7 @@ http://semver.org/
 
 Then when you have merged your changes to the master branch you do 
 
-```npm version pathc```or ```npm version minor```or ```npm version major```
+```npm version patch```or ```npm version minor```or ```npm version major```
 
 and then push the version change
 
