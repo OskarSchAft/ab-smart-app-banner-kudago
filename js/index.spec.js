@@ -2,16 +2,16 @@ import * as sut from './index';
 
 const winStub = {
     console: {
-        log: () => {},
+        log: () => undefined,
     },
 };
-sut.__Rewire__("win", winStub);
+sut.__Rewire__('win', winStub);
 
-describe("The index module", function() {
+describe('The index module', () => {
 
-    describe("function speak", function() {
+    describe('function speak', () => {
 
-        it("Says something", function() {
+        it('Says something', () => {
             spyOn(winStub.console, 'log');
 
             sut.speak();
