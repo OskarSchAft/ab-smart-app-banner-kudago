@@ -2,7 +2,7 @@ import * as sut from './index';
 
 const winStub = {
     console: {
-        log: () => undefined,
+        log: () => {},
     },
 };
 sut.__Rewire__('win', winStub);

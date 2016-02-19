@@ -1,12 +1,7 @@
 {
-    "extends": "airbnb/base",
+    "extends": "aftonbladet",
     "env": {
+      "browser": true,
       "jasmine": true
-    },
-    "rules": {
-      "indent": [2, 4],
-      "arrow-body-style": 0,
-      "padded-blocks": 0,
-      "space-before-function-paren": [2, "never"]
     }
 }
