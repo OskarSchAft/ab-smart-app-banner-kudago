@@ -1,7 +1,7 @@
 {
-    "extends": "aftonbladet",
-    "env": {
-      "browser": true,
-      "jasmine": true
-    }
+  "extends": "aftonbladet",
+  "env": {
+    "browser": true,
+    "jasmine": true
+  }
 }

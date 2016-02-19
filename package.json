@@ -25,6 +25,7 @@
     "karma-webpack": "^1.7.0",
     "phantomjs": "^1.9.18",
     "phantomjs-polyfill": "0.0.1",
+    "pre-commit": "^1.1.2",
     "rewire": "^2.3.4",
     "rewire-webpack": "^1.0.0",
     "rimraf": "^2.4.4",
@@ -39,5 +40,9 @@
     "prepublish": "npm run test && npm run clean && npm run transpile && npm run bundle",
     "test": "NODE_ENV=test ./node_modules/karma/bin/karma start --single-run",
     "transpile": "babel js --ignore *.spec.js --out-dir lib"
-  }
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ]
 }
