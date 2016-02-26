@@ -1,7 +1,7 @@
 var path = require('path');
 
 var libraryTarget = (process.env.LIBRARY_TARGET ? process.env.LIBRARY_TARGET : 'amd');
-module.exports = {
+var config = {
 	entry: {
 		'ab-jsmodule-template': './js/index.js'
 	},
@@ -27,3 +27,10 @@ module.exports = {
         ]
     },
 };
+
+if (libraryTarget === 'var') {
+    config.output.library = 'abJsModuleTemplate';
+    config.output.filename = '[name].js';
+}
+
+module.exports = exports = config;

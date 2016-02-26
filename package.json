@@ -33,7 +33,7 @@
     "webpack": "^1.12.2"
   },
   "scripts": {
-    "bundle": "webpack",
+    "bundle": "webpack && LIBRARY_TARGET=var webpack",
     "clean": "rimraf dist",
     "lint": "eslint js",
     "preversion": "npm run test",
