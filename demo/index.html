@@ -4,15 +4,13 @@
     <button type="button" onClick="onSpeak()">Speak</button>
     <div id="header"></div>
 
-    <script type="text/javascript" src="lib/mini-require-ab.js"></script>
-    <script type="text/javascript" src="../dist/ab-jsmodule-template.amd.js"></script>
+    <script type="text/javascript" src="../dist/ab-jsmodule-template.js"></script>
 
     <script type="text/javascript">
-        var module = require('ab-jsmodule-template'),
-            header = document.getElementById("header");
+        var header = document.getElementById("header");
 
         function onSpeak() {
-            module.speak();
+            abJsModuleTemplate.speak();
             header.innerHTML = "I have spoken in the console."
         }
     </script>
