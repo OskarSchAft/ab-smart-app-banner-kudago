@@ -25,7 +25,8 @@ module.exports = function(config) {
 
             // list of files / patterns to load in the browser
             files: [
-                'js/**/*spec.js'
+                'js/**/*spec.js',
+                'node_modules/phantomjs-polyfill/bind-polyfill.js'
             ],
 
             // list of files to exclude
