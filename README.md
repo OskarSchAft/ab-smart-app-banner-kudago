@@ -5,7 +5,7 @@ This is an Aftonbladet template for a front-end module. The project aims to give
 https://confluence.schibsted.se/display/AftonbladetIT/Frontend+modules
 
 ## Demo
-This project contains a demo-page that demonstrates the behaviour of the module. The demo page uses the AMD dist-file so before you open it you need to build the dist-files
+This project contains a demo-page that demonstrates the behaviour of the module. The demo page uses a dist-file so before you open it you need to build them
 
 ```npm run bundle```
 
