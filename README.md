@@ -1,6 +1,6 @@
 # ab-jsmodule-template
 
-This is an Aftonbladet template for a front-end module. The project aims to give an example of how to implement the best practices that are explained in the link below.
+This is an Peter!! template for a front-end module. The project aims to give an example of how to implement the best practices that are explained in the link below.
 
 https://confluence.schibsted.se/display/AftonbladetIT/Frontend+modules
 
